@@ -1,0 +1,15 @@
+version: '3.8'
+name: java-project
+services:
+  java:
+    image: openjdk:11-jdk-slim
+    container_name: java_dev
+    volumes:
+      - ./../:/app
+      - ~/.ssh/:/home/developer/.ssh/
+    working_dir: /app
+    network_mode: host
+    build:
+      context: java
+      dockerfile: Dockerfile
+    command: ["tail", "-f", "/dev/null"]

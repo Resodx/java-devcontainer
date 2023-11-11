@@ -1,0 +1,37 @@
+{
+    "name": "Java Development Container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "java",
+    "remoteUser": "developer",
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "launch": {
+                    "version": "0.2.0",
+                    "configurations": [
+                        {
+                            "type": "java",
+                            "name": "Debug (Launch) - Current File",
+                            "request": "launch",
+                            "mainClass": "${file}"
+                        }
+                    ]
+                },
+                "editor.quickSuggestions": {
+                    "comments": true
+                }
+            },
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "aaronthomas.vscode-snazzy-operator",
+                "vscode-icons-team.vscode-icons",
+                "naumovs.color-highlight",
+                "mhutchie.git-graph",
+                "arturock.gitstash",
+                "GitHub.copilot",
+                "liamhammett.inline-parameters"
+            ]
+        }
+    }
+}
