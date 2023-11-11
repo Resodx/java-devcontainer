@@ -1,5 +1,5 @@
 # Use an official OpenJDK runtime as a parent image
-FROM openjdk:11-jdk-slim
+FROM openjdk:22-jdk-slim
 
 USER root
 

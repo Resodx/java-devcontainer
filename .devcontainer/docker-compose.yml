@@ -2,7 +2,7 @@ version: '3.8'
 name: java-project
 services:
   java:
-    image: openjdk:11-jdk-slim
+    image: openjdk:22-jdk-slim
     container_name: java_dev
     volumes:
       - ./../:/app
